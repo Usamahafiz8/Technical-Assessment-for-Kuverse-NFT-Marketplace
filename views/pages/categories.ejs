@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+
+<style>
+    .dataTables_actions {
+        display: none;
+    }
+    .dataTables_length select option {
+        background: #192c47;
+    }
+    .page-select option {
+        background: #160e1c;
+    }
+</style>
+<body data-sa-theme="2">
+<%- include('../partials/header') %>
+<%- include('../partials/sidebar') %>
+
+<section class="content">
+    <header class="content__title">
+        <h1>Dashboard</h1>
+    </header>
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="stock_table" class="table table-bordered table-striped text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th style="width: 5%">No</th>
+                        <th style="width: 10%">id</th>
+                        <th style="width: 25%">Name</th>
+                        <th style="width: 25%">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% for (let i = 0; i < categories.length; i++) { %>
+                        <tr>
+                            <td><%= i + 1 %></td>
+                            <td><%= categories[i].id %></td>
+                            <td><%= categories[i].name %></td>
+                            <td>
+                                <button class="btn btn-warning btn-sm" onclick="openUpdateModal(`<%- categories[i].name %>`)">edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="openDeleteModal(`<%- categories[i].name %>`)">remove</button></td>
+                        </tr>
+                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- change category -->
+<div class="modal fade" id="modal-category-update" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Category Name</h5>
+                <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="old_category_name" value="">
+                <label>New Category Name</label>
+                <input class="form-control" type="text" id="new_category_name">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" onclick="submitUpdateCategory()">Submit updates</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- confirm delete modal -->
+<div class="modal fade text-center" id="modal-category-delete" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <i class="zwicon-info-circle" style="font-size: 7rem"></i>
+                </div>
+                <div class="form-group">
+                    <h3>Are you sure to delete this user?</h3>
+                    <input class="form-control" type="text" id="confirm_delete_category" value="" readonly>
+                </div>
+                <button type="button" class="btn btn-warning" onclick="confirmDeleteCategory()">Confirm Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer') %>
+<%- include('../partials/foot') %>
+
+<script>
+    $(function () {
+        $('#stock_table').DataTable({
+            aaSorting: [],
+            autoWidth: !1,
+            responsive: !0,
+            lengthMenu: [[15, 40, 100, -1], ['15 Rows', '40 Rows', '100 Rows', 'Everything']],
+            language: {searchPlaceholder: 'Search for records...'},
+            sDom: '<"dataTables__top"flB<"dataTables_actions">>rt<"dataTables__bottom"ip><"clear">'
+        });
+    });
+    function openUpdateModal(name) {
+        $('#old_category_name').val(name);
+        $('#modal-category-update').modal();
+    }
+    function submitUpdateCategory() {
+        let old_name = $('#old_category_name').val();
+        let new_name = $('#new_category_name').val();
+        if (!old_name || !new_name) {customAlert("Category is undefined!");return;}
+        let url = '/admin-routes/category-update';
+        $.ajax({
+            url: url,
+            method: 'post',
+            data: {action: 'update', name: old_name, new_name: new_name},
+            success: function (res) {
+                if (res.status === 'success') {
+                    customAlert(res.message, true);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                } else customAlert(res.message);
+            }
+        })
+    }
+    function openDeleteModal(name) {
+        $('#confirm_delete_category').val(name);
+        $('#modal-category-delete').modal();
+    }
+    function confirmDeleteCategory() {
+        let name = $('#confirm_delete_category').val();
+        if (!name) {customAlert("Category is undefined!");return;}
+        let url = '/admin-routes/category-update';
+        $.ajax({
+            url: url,
+            method: 'post',
+            data: {action: 'delete', name: name},
+            success: function (res) {
+                if (res.status === 'success') {
+                    customAlert(res.message, true);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                } else customAlert(res.message);
+            }
+        })
+    }
+</script>
+</body>
+</html>
