@@ -1,0 +1,47 @@
+<style>
+    i {
+        margin-right: .6rem;
+    }
+
+    .price-table__item--popular .price-table__action {
+        background: green;
+    }
+
+    .price-table__action {
+        background: orange;
+    }
+
+</style>
+<aside class="sidebar ">
+    <div class="scrollbar">
+        <div class="user">
+            <div class="user__info">
+                <img class="user__img" src="<%= session.user.avatar %>" alt="Avatar">
+                <div style="word-break: break-all">
+                    <div class="user__name"><%= session.user.name %></div>
+                    <div class="user__email"><%= session.user.email %></div>
+                    <div class="user__multi_store">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="navigation">
+            <li class="<%= (tab_text == 'dashboard') ? 'navigation__active' : '' %>">
+                <a href="/admin-routes/home"><i class="zwicon-users"></i> Users</a>
+            </li>
+            <li class="<%= (tab_text == 'categories') ? 'navigation__active' : '' %>">
+                <a href="/admin-routes/categories"><i class="zwicon-grid"></i> Categories</a>
+            </li>
+            <li class="<%= (tab_text == 'collections') ? 'navigation__active' : '' %>">
+                <a href="/admin-routes/collections"><i class="zwicon-voice-assistant"></i> Collections</a>
+            </li>
+            <li class="<%= (tab_text == 'nfts') ? 'navigation__active' : '' %>">
+                <a href="/admin-routes/nfts"><i class="zwicon-server-stack"></i> NFTs</a>
+            </li>
+            <li>
+                <a href="/admin-routes/logout"><i class="zwicon-arrow-circle-right"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+</aside>

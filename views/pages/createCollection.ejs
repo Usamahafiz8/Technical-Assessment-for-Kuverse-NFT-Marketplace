@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<link rel="stylesheet" href="/css/staff-api.css">
+<style>
+
+</style>
+<body data-sa-theme="2">
+<%- include('../partials/header') %>
+<%- include('../partials/sidebar') %>
+
+<section class="content">
+    <header class="content__title">
+        <h1>Create Collection</h1>
+    </header>
+    <div class="card">
+        <div class="card-body">
+            <div style="display: flex">
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Wallet Address</div>
+                    </div>
+                    <input type="text" class="form-control" id="staff_address" placeholder="Wallet address" readonly>
+                </div>
+                <div>
+                    <button class="btn btn-danger" id="staff_logout_btn" onclick="staffLogout()" style="width: 250px; display: none">Logout</button>
+                    <button class="btn btn-success" id="staff_login_btn" style="width: 250px" onclick="web3Init()">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="card_collection">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <div id="upload_container">
+                        <div id="upload_caption">We recommend an image of at least 400X400.</div>
+                        <div id="choose_file_btn" onclick="$('#card_collection #file_input').click()">
+                            Choose File
+                        </div>
+                        <input id="file_input" type="file" value="" accept="image/*" onChange="handleCollectionImg()"/>
+                    </div>
+
+                    <div id="preview_container" style="display: none">
+                        <div id="close_icon_container">
+                            <span class="zwicon-close-circle" style="font-size: 2.5rem;" onClick="closeCollectionImg()"></span>
+                        </div>
+                        <div id="media_container">
+                            <div>Loading ...</div>
+                            <img id="img_preview"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('../partials/footer') %>
+<%- include('../partials/foot') %>
+<script src="/web3-script/dist/web3.min.js"></script>
+<script src="/js/staff-apis.js"></script>
+<script>
+
+</script>
+</body>
+</html>

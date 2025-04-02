@@ -1,0 +1,819 @@
+.profile-bd-img {
+    position: relative;
+}
+
+.profile-bd-img img {
+    position: absolute;
+    height: 552px;
+    top: 115px;
+    right: 0;
+}
+.profile-bd-img {
+    height: 250px;
+}
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.px-4 {
+    padding: 0 20px;
+}
+
+.profile-btn {
+    /* margin-top: 258px; */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.profilepage {
+    padding: 0 10px;
+
+}
+
+.d-none-white {
+    display: none !important;
+}
+
+.kore-card-container button a {
+    text-decoration: none;
+    color: white;
+}
+
+.r-l-border {
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    margin: 16px 6px;
+}
+
+.r-l-border .no-show {
+    display: none;
+}
+
+.tech-center-inner hr {
+    width: 90%;
+    margin: auto;
+}
+
+.userscontent {
+    display: flex;
+    align-items: center;
+    padding: 45px 30px;
+}
+
+.dark-mode-toggle {
+    cursor: pointer;
+}
+
+.tech-profile-lines span:before {
+    border-radius: 25px;
+    background: rgba(187, 187, 187, 0.42);
+    height: 23px;
+    content: '';
+    display: block;
+    width: 220px;
+}
+
+.tech-profile-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 12px;
+}
+
+.tech-profile-lines span:nth-child(1):before {
+    width: 262px;
+}
+
+.backpackMPC {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.hatch-container {
+    width: 320px;
+    margin: auto;
+}
+
+.hatch-container h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 10.7px;
+    color: #00A8E2;
+}
+
+.hatch-container img {
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.hatch-image-bottom-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+.hatch-image-bottom-box div {
+    width: 57px;
+    height: 57px;
+    float: left;
+    border-radius: 15px;
+    background: var(--grey, #EEE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.hatch-container button {
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00BEEE 0%, #008BD3 100%);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    width: 247px;
+    height: 66px;
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border: none;
+    margin-top: 47px;
+    margin-left: 2rem;
+    margin-bottom: 21px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.hatch-container p {
+    color: #C7CCD1;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+
+/* connect wallet*/
+.ku-mbl-version-connect {
+    display: none;
+}
+
+.open .ku-mbl-version-connect {
+    display: block;
+    max-width: 387px;
+    margin: auto;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #00BEEE 0%, #008BD3 100%);
+    overflow: hidden;
+    margin-top: 63px;
+}
+
+.open .ku-mbl-version-connect>div {
+    padding: 28px 37px 54px 37px;
+}
+
+.open .ku-mbl-version-connect>div>div:nth-child(1) {
+    margin-left: 25px;
+}
+
+.open .ku-mbl-version-connect>div:nth-child(1) {
+    max-width: 350px;
+    margin: auto;
+    overflow: hidden;
+    padding: 27px 0 34px 0;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(1), .open .ku-mbl-version-connect>div div:nth-child(2), .open .ku-mbl-version-connect>div div:nth-child(3), .open .ku-mbl-version-connect>div div:nth-child(4) {
+    width: 100%;
+    overflow: hidden;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(1) a {
+    width: 32px;
+    height: 32px;
+    float: right;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(2) div {
+    width: 72px;
+    margin: auto;
+    overflow: hidden;
+    height: 72px;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(2) div a {
+    width: 100%;
+    display: inline-block;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(2) div img {
+    width: 100%;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(3) h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4.5px;
+    margin: 10px 0 0 0;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(4) ul {
+    width: 98%;
+    margin: auto;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(4) ul li {
+    border-radius: 27px;
+    background: var(--BLUE, linear-gradient(180deg, #00BEEE 0%, #0087D1 100%));
+    box-shadow: 2px 2px 14px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    font-family: 'Inter';
+    justify-content: center;
+    align-items: center;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(4) ul li a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2.1px;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.open .ku-mbl-version-connect>div div:nth-child(4) ul li a img {
+    width: 29px;
+    height: auto;
+    padding-left: 5px;
+}
+
+
+
+.open .ku-mbl-version-connect>img {
+    margin-right: 86px;
+}
+
+.open .ku-mbl-version-connect {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.open .ku-mbl-version-connect>img {
+    margin-right: 75px;
+}
+
+.open .ku-mbl-version-connect {
+    position: relative;
+    overflow: inherit;
+    z-index: 99;
+}
+
+.open .ku-mbl-version-connect>img {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    margin-right: 45px;
+    display: block;
+}
+
+
+/* kore replace */
+.kore-card-container {
+    border-radius: 25px;
+    background: linear-gradient(180deg, #00BEEE 0%, #008BD3 100%);
+    width: 358px;
+    padding: 50px 21px;
+    margin: auto;
+}
+
+.kore-card-row-black {
+    border-radius: 25px;
+    background: white;
+    height: 55px;
+    display: flex;
+    padding: 8px 21px;
+}
+
+.kore-card-row-black img {
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.kore-card-row-black span {
+    width: 73px;
+    float: left;
+}
+
+.kore-card-row-black span p {
+    color: #BBB;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.kore-card-row-black h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.kore-card-row-black h1 {
+    width: 190px;
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 8px 0 0 0;
+
+}
+
+.kore-card-row {
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.kore-card-row img {
+    height: 45px;
+    float: left;
+}
+
+.kore-card-row h1 {
+    height: 45px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 8.56px;
+    color: #eee;
+    padding-left: 25px;
+    margin: 13px 0 0 0;
+}
+
+.kore-card-container h6 {
+    color: #EEE;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 10px 0;
+}
+
+.kore-card-container button {
+    border-radius: 27px;
+    background: var(--BLUE, linear-gradient(180deg, #00BEEE 0%, #0087D1 100%));
+    box-shadow: 2px 2px 14px 0px rgba(255, 255, 255, 0.25) inset, 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4.5px;
+    width: 100%;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+}
+
+.korereplace h5 {
+    text-align: center;
+    margin-bottom: 115px;
+
+}
+
+.korereplace h3 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 10.7px;
+    margin: 78px 0 200px;
+    background: linear-gradient(180deg, #00BEEE 0%, #0087D1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-house {
+    opacity: 0.6;
+    width: 272px;
+    height: 288px;
+    background: url(../../../../public/images/corp-store\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -36px;
+}
+
+.background-house {
+    opacity: 0.6;
+    width: 272px;
+    height: 288px;
+    background: url(../../../../public/images/korp-conveniences\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -36px;
+}
+
+
+
+/*  */
+
+/* Define classes to hide elements */
+
+.mobile-hidden {
+    display: block;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
+.d-img-h {
+    height: 42px;
+    width: auto;
+}
+
+/* team  */
+.team {
+    color: #00A8E2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 79px 0 15px;
+}
+
+.content-bottom-team-card-row1, .content-bottom-team-card-row2 {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.content-bottom-team-card-row1 {
+    align-items: end;
+}
+
+.content-bottom-team-card-row1 .team-card-item {
+    width: 109px;
+    height: 109px;
+    border-radius: 15px;
+    background: var(--grey, #EEE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-bottom-team-card-row1 .team-card-item:nth-child(2) {
+    width: 151px !important;
+    height: 143px !important;
+}
+
+.content-bottom-team-card-row1 .team-card-item:nth-child(2) img {
+    height: 90px;
+}
+
+.content-bottom-team-card-row2 .team-card-item {
+    width: 123px;
+    height: 123px;
+    border-radius: 15px;
+    background: var(--grey, #EEE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-bottom-team-card-row2 .team-card-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.content-bottom-team-card-row3 {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.content-bottom-team-card-row3 .team-card-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: var(--grey, #EEE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ku-mbl-version-menu {
+    display: none;
+}
+
+/* Cards  */
+
+.tech-seller-card-main {
+    width: 351px;
+    min-height: 567px;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.tech-seller-card-top-title h2 {
+    background: linear-gradient(180deg, #00BEEE 14.06%, #0087D1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.tech-seller-card-top {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 21px;
+}
+
+.tech-seller-card-main-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-seller-card-main-inner-bg {
+    border-radius: 15px;
+    background: #EEE;
+    width: 351px;
+    height: 351px;
+    margin-top: 19px;
+    border-radius: 15px;
+    z-index: 99;
+}
+
+.tech-seller-card-main-inner-btn {
+    margin-top: -4px;
+    background-color: #FFC739;
+    max-width: 298px;
+    height: 12px;
+    border-radius: 15px;
+    width: 100%;
+    padding-top: 18px;
+}
+
+.tech-seller-card-main-inner-btn a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tech-seller-card-icons {
+    margin-top: 9px;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.tech-seller-card-icons span {
+    color: #6A6A6A;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tech-seller-card-icons img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/*buttom*/
+.tech-buyer-card-button-main {
+    background: #EEEEEE;
+    width: 100%;
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.tech-buyer-card-button {
+    max-width: 119px;
+    height: 41px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #F9F9F9;
+    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.25) inset;
+    padding: 5px;
+
+}
+
+.tech-buyer-card-button button {
+    background: linear-gradient(180deg, rgba(0, 190, 238, 1) 24.48%, rgba(0, 135, 209, 1) 74.48%);
+    color: #FFF;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
+
+.tech-buyer-price {
+    padding-left: 15px;
+}
+
+.tech-buyer-price span {
+    color: #00BBEC;
+    text-align: center;
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.56px;
+}
+
+.tech-buyer-price span sup {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+}
+
+.tech-seller-card-email {
+    margin-top: 9px;
+    margin-bottom: 7px;
+}
+
+.tech-seller-card-email a {
+    color: #404040;
+
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.tech-seller-card-email a:nth-child(2) {
+    margin-top: -10px;
+}
+
+/*popup*/
+#tech-seller-popup1-container, #tech-seller-popup2-container, #tech-seller-popup3-container {
+    display: none;
+
+}
+
+.tech-sellecr-card-popup {
+    position: absolute;
+    background: #fff;
+    min-height: 252px;
+    max-width: 351px;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+    align-items: normal;
+    background: #FFF;
+    margin-top: 19px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-bottom: 22px;
+
+
+}
+
+.tech-sellecr-card-popup table {
+    padding-left: 25px;
+    padding-right: 13px;
+    width: 100%;
+}
+
+.tech-sellecr-card-popup table th {
+    color: #404040;
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 0.45px;
+    text-align: left;
+    padding-bottom: 19px;
+}
+
+.tech-sellecr-card-popup table td {
+    text-align: left;
+    color: #404040;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.36px;
+}
+
+.tech-sellecr-card-popup table tfoot td {
+    color: #404040;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.42px;
+}
+
+/*popup 2*/
+#tech-seller-popup2-container .tech-sellecr-card-popup {
+    align-items: flex-start;
+
+}
+
+#tech-seller-popup2-container table td {
+
+    .tech-seller-card-button-main {
+        background: #EEEEEE;
+        width: 100%;
+        padding: 4px 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .tech-seller-card-button {
+        max-width: 261px;
+        height: 41px;
+        width: 100%;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: #F9F9F9;
+        box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.25) inset;
+        padding: 5px;
+
+    }
+
+    .tech-seller-card-button button {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 79, 79, 1) 100%);
+        color: #FFF;
+        border: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.28px;
+    }
+
+    font-size: 10px;
+}
